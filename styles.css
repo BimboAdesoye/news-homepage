@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background {
+    background-color: hsl(36, 100%, 99%);
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.homepage {
+    padding: 1.5rem 1rem;
+    position: relative;
+}
+
+.background .homepage nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.background .homepage .nav-list ul {
+    display: none;
+}
+
+.homepage nav .nav-list li {
+    margin: 0 0 40px 20px;
+    font-size: 18px;
+    color: hsl(240, 20%, 1%);
+}
+
+.homepage nav .nav-list li a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+nav img {
+    cursor: pointer;
+}
+
+.background .homepage nav .logo img {
+    width: 40px;
+}
+
+.header-content img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.header-content h1 {
+    margin-bottom: 15px;
+}
+
+.header-content p {
+    color: hsl(240, 100%, 5%);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+ .header-content a {
+    text-decoration: none;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 700;
+} 
+
+.header-content a:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.header-text {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    margin: 70px 0 50px;
+    padding: 1.8rem 1.5rem;
+}
+
+
+.header-text div:first-child h2 {
+    color: hsl(35, 77%, 62%);
+}
+
+
+.header-text div:nth-of-type(2),
+ .header-text div:nth-of-type(3) {
+    padding: 34px 0;
+    border-bottom: 1px solid hsl(240, 3%, 49%);
+}
+
+.header-text div h3 {
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+.header-text div h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.header-text div p {
+    color: hsl(233, 8%, 79%);
+    opacity: .7;
+    line-height: 1.6;
+}
+
+.header-text div:nth-of-type(4) {
+    padding: 35px 0 0 0;
+}
+
+.footer .footerx {
+    display: flex;
+    margin-bottom:35px;
+}
+
+.footer .footerx img {
+    width: 100px;
+}
+
+.footer .footerx div {
+    margin-left: 20px;
+}
+
+.footer .footerx div h2,
+.footer .footerx div h4 {
+    margin-bottom: 12px;
+}
+
+.footer .footerx div h2 {
+    color: hsl(233, 8%, 79%);
+}
+
+.footer .footerx div h4 {
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+.footer .footerx div h4:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.footer .footerx div p {
+    line-height: 1.6;
+    color: hsl(240, 100%, 5%);
+    opacity: .8;
+}
+
+
+@media screen and (min-width: 992px) {
+    .background {
+        padding: 4rem;
+    }
+
+    .background .homepage .nav-list ul {
+        display: inline-flex;
+    }
+
+    .homepage .nav-list .hamburger img {
+        display: none;
+    }
+
+    .homepage .nav-list ul li {
+        list-style: none;
+        margin-left: 50px;
+    }
+
+    .homepage .nav-list li a:hover {
+        color: hsl(35, 77%, 62%);
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .header-text {
+        margin: 0;
+        padding: 1.8rem 2rem;
+    }
+
+    .header-text h3 {
+        font-size: 22px;
+    }
+
+    .header-text div:nth-of-type(2),
+    .header-text div:nth-of-type(3),
+    .header-text div:nth-of-type(3) {
+       padding: 50px 0;
+    }
+
+    .header .header-content {
+        margin-right: 30px;
+    }
+
+    .header .header-content2 {
+        display: flex;
+    }
+
+    .header-content2 h1 {
+        margin-top: 10px;
+        margin-right: 50px;
+        font-size: 67px;
+    }
+
+    .header-content2 .header-content3 {
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    .header-content2 .header-content3 p {
+        margin-bottom: 50px;
+        letter-spacing: 1.7;
+    }
+
+    .footer {
+        display: flex;
+        margin-top: 70px;
+    }
+
+    .footerx:nth-of-type(3) {
+        padding-left: 20px;
+    }
+
+    .footerx:nth-of-type(2) {
+        padding-left: 50px;
+    }
+
+    .footerx div {
+        margin-left: 40px;
+    }
+
+    .footerx div h4 {
+        font-size: 20px;
+    }
+}
