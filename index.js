@@ -1,9 +1,13 @@
- const hamburger = document.querySelector('.homepage nav .nav-list .hamburger');
- const mobile_menu = document.querySelector('.homepage nav .nav-list ul');
- const header = document.querySelector('.background.homepage');
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('.nav-list');
+const hamburger = document.querySelector('.hamburger');
 
+menu.addEventListener('click', ()=> {
+    menu.classList.toggle('active');
+    nav.classList.toggle('active');
+})
 
 hamburger.addEventListener('click', ()=> {
     hamburger.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
+    nav.classList.toggle('active');
 })
